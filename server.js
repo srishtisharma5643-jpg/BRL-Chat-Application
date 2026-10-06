@@ -23,6 +23,7 @@ const io = new Server(server, {
     cors: {
         origin: [
             "https://brl-chat-application-1.onrender.com",
+            "https://brl-chat-application.vercel.app",
             "http://localhost:5173"
         ],
         methods: ["GET", "POST"]
