@@ -30,7 +30,7 @@ function Chat() {
             return;
         }
 
-        const socket = io("http://localhost:5000");
+        const socket = io("https://brl-chat-application.onrender.com");
 
         socket.emit("joinConversation", conversationId);
 

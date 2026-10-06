@@ -21,7 +21,7 @@ const server = http.createServer(app);
 // Socket.IO server
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://brl-chat-application-1.onrender.com",
         methods: ["GET", "POST"]
     }
 });
