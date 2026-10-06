@@ -8,7 +8,7 @@ function Conversations() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:5000/conversations",
+                "https://brl-chat-application.onrender.com/conversations",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

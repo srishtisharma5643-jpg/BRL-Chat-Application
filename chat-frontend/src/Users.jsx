@@ -8,7 +8,7 @@ function Users() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:5000/users",
+                "https://brl-chat-application.onrender.com/users",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -30,7 +30,7 @@ function Users() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:5000/conversations",
+            "https://brl-chat-application.onrender.com/users",
             {
                 method: "POST",
                 headers: {

@@ -56,7 +56,7 @@ function Chat() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/messages/${conversationId}`,
+                `https://brl-chat-application.onrender.com/messages/${conversationId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -90,7 +90,7 @@ function Chat() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:5000/messages",
+            "https://brl-chat-application.onrender.com/messages",
             {
                 method: "POST",
                 headers: {
@@ -107,7 +107,7 @@ function Chat() {
         const data = await response.json();
 
         if (data.success) {
-            const socket = io("http://localhost:5000");
+            const socket = io("https://brl-chat-application.onrender.com");
 
             socket.emit("joinConversation", conversationId);
 
