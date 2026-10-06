@@ -30,7 +30,7 @@ function Users() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "https://brl-chat-application.onrender.com/users",
+            "https://brl-chat-application.onrender.com/conversations",
             {
                 method: "POST",
                 headers: {
